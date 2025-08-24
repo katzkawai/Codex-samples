@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ja" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ポートフォリオ | 山田 太郎</title>
+    <meta name="description" content="山田太郎のポートフォリオ。フロントエンド中心にUI/UX設計、React/TypeScriptでの開発、デザインシステム構築を行います。" />
+    <meta name="color-scheme" content="light dark" />
+
+    <!-- Open Graph / Twitter (プレースホルダ) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ポートフォリオ | 山田 太郎" />
+    <meta property="og:description" content="フロントエンド/UXに強いエンジニア、山田太郎の制作物と経歴。" />
+    <meta property="og:image" content="/assets/avatar.svg" />
+    <meta property="og:url" content="https://portfolio.example.com/taro" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
+    <link rel="preload" href="/styles/main.css" as="style" />
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">メインコンテンツへスキップ</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="ホーム">
+          <img src="/assets/logo.svg" alt="ロゴ" width="28" height="28" />
+          <span class="brand-text">山田 太郎</span>
+        </a>
+
+        <nav class="site-nav" aria-label="メイン">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="メニュー">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </button>
+          <ul id="nav-list" class="nav-list">
+            <li><a href="#home">ホーム</a></li>
+            <li><a href="#about">プロフィール</a></li>
+            <li><a href="#skills">スキル</a></li>
+            <li><a href="#projects">制作物</a></li>
+            <li><a href="#experience">経歴</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+          </ul>
+        </nav>
+
+        <button id="theme-toggle" class="theme-toggle" aria-label="ダークモード切替" title="テーマ切替">
+          <span class="theme-icon" aria-hidden="true">☀️</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section id="home" class="section hero" aria-labelledby="hero-title">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1 id="hero-title">こんにちは、<span class="accent">山田 太郎</span>です。</h1>
+            <p class="lead">フロントエンドエンジニア。使いやすさと見た目の美しさを両立したUIを、React/TypeScriptを中心に素早く実装します。</p>
+            <div class="hero-cta">
+              <a class="btn primary" href="#projects">制作物を見る</a>
+              <a class="btn" href="#contact">相談する</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <img class="avatar" src="/assets/avatar.svg" alt="プロフィール画像" width="240" height="240" />
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section" aria-labelledby="about-title">
+        <div class="container">
+          <h2 id="about-title">プロフィール</h2>
+          <p>
+            フロントエンド歴5年。デザインシステムの構築やアクセシビリティ改善、パフォーマンスチューニング（LCP/CLSの改善）を得意としています。ビジネス要件からUI/UXを設計し、プロダクト価値に直結する開発を志向します。
+          </p>
+          <ul class="meta">
+            <li><strong>拠点:</strong> 東京（フルリモート可）</li>
+            <li><strong>活動形態:</strong> 業務委託 / 副業 / 正社員</li>
+            <li><strong>連絡先:</strong> <a href="#contact">メールはこちら</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section" aria-labelledby="skills-title">
+        <div class="container">
+          <h2 id="skills-title">スキル</h2>
+          <div class="chips">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS / Sass</span>
+            <span class="chip">JavaScript / TypeScript</span>
+            <span class="chip">React / Next.js</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">UI/UX</span>
+            <span class="chip">Figma</span>
+            <span class="chip">Performance</span>
+            <span class="chip">Accessibility</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section" aria-labelledby="projects-title">
+        <div class="container">
+          <h2 id="projects-title">制作物</h2>
+          <div class="grid projects">
+            <article class="card">
+              <div class="card-thumb" aria-hidden="true"></div>
+              <div class="card-body">
+                <h3 class="card-title">UI コンポーネントライブラリ</h3>
+                <p class="card-text">デザイントークンとアクセシブルなReactコンポーネント群。役割: 個人制作 / 技術: React, TS, Storybook / 成果: 実案件での再利用により開発速度30%向上。</p>
+                <div class="card-actions">
+                  <a class="btn small" href="https://example.com/demo-ui" target="_blank" rel="noopener">デモ</a>
+                  <a class="btn small ghost" href="https://github.com/example/ui-kit" target="_blank" rel="noopener">GitHub</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-thumb" aria-hidden="true"></div>
+              <div class="card-body">
+                <h3 class="card-title">旅行プランナー</h3>
+                <p class="card-text">地図と日程を組み合わせた旅程作成アプリ。役割: フルスタック / 技術: Next.js, Prisma, Map API / 成果: 初回LCP 3.8s→1.9s。</p>
+                <div class="card-actions">
+                  <a class="btn small" href="https://example.com/travel" target="_blank" rel="noopener">デモ</a>
+                  <a class="btn small ghost" href="https://github.com/example/travel-planner" target="_blank" rel="noopener">GitHub</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-thumb" aria-hidden="true"></div>
+              <div class="card-body">
+                <h3 class="card-title">リアルタイムチャット</h3>
+                <p class="card-text">WebSocketを用いた軽量チャット。役割: フロント / 技術: Vite, Zustand, Socket.IO / 成果: 接続遅延を100ms以下に。</p>
+                <div class="card-actions">
+                  <a class="btn small" href="https://example.com/chat" target="_blank" rel="noopener">デモ</a>
+                  <a class="btn small ghost" href="https://github.com/example/rt-chat" target="_blank" rel="noopener">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" class="section" aria-labelledby="exp-title">
+        <div class="container">
+          <h2 id="exp-title">経歴</h2>
+          <ul class="timeline">
+            <li>
+              <div class="tl-dot" aria-hidden="true"></div>
+              <div class="tl-content">
+                <div class="tl-header">
+                  <strong>株式会社スカイリンク</strong>
+                  <span class="tl-meta">2023 - 現在 / フロントエンドエンジニア</span>
+                </div>
+                <p>デザインシステムの導入と運用、Next.js移行、Core Web Vitals改善（CLS 0.2→0.04）。</p>
+              </div>
+            </li>
+            <li>
+              <div class="tl-dot" aria-hidden="true"></div>
+              <div class="tl-content">
+                <div class="tl-header">
+                  <strong>株式会社テックフロンティア</strong>
+                  <span class="tl-meta">2020 - 2023 / Webエンジニア</span>
+                </div>
+                <p>新規SaaSの立ち上げ（React/Node）。認証/課金/通知など横断機能の実装と運用。</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section" aria-labelledby="contact-title">
+        <div class="container">
+          <h2 id="contact-title">お問い合わせ</h2>
+          <p>お仕事のご相談・ご依頼は下記よりご連絡ください。数日以内に返信します。</p>
+          <div class="contact-box">
+            <a class="btn primary" href="mailto:taro@example.com">メールを送る</a>
+            <a class="btn ghost" href="https://x.com/taro_dev" target="_blank" rel="noopener">X(Twitter)</a>
+            <a class="btn ghost" href="https://github.com/taro-dev" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/taro-yamada" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> あなたの名前. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="/scripts/main.js" defer></script>
+  </body>
+  </html>
